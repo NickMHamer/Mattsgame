@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+.displayArea{
+    height: 500px;
+    display: flex;
+    width: 500px;
+    background-color: blue;
+}
+.contentContainer{
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+}
+.gameButton{
+    
+    width: 50%;
+    
+}
+#startButton{
+    background-color: #00ab66;
+}
+#stopButton{
+    background-color: #cf142b;
+}
+.buttonArea{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
