@@ -8,14 +8,17 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-origin: content-box;
+    font-weight: bold;
 }
 
 select{
     background-color: #d3d3d5;
     font-weight: bold;
+    border-radius: 4px;
 }
 option{
     font-weight: bold;
+    border-radius: 4px;
 }
 .answer{
     height: 30px;
@@ -30,6 +33,7 @@ option{
     align-items: center;
     width: 500px;
     background-color: orchid;
+    border-radius: 4px;
 }
 
 .contentContainer{
@@ -41,6 +45,7 @@ option{
 .gameButton{
     font-weight: bold;
     width: 50%;  
+    border-radius: 4px;
 }
 #startButton{
     background-color: #00ab66;

@@ -12,32 +12,62 @@
     return Math.floor(Math.random() * max + 1);
   }
 
+  function countingGame() {}
+
   function colorsGame() {
-    let randomNumber = getRandomNumber(6);
+    let randomNumber = getRandomNumber(7);
     displayArea.replaceChildren();
 
     while (randomNumber === lastRandomNumber) {
-      randomNumber = getRandomNumber(6);
+      randomNumber = getRandomNumber(7);
     }
 
     if (randomNumber === 1) {
       lastRandomNumber = randomNumber;
-      createNewColor("square", "Red", "red");
+      createNewColor("square", "Red", "#cf142b", "audioassets/Colors/Red.mp3");
     } else if (randomNumber === 2) {
       lastRandomNumber = randomNumber;
-      createNewColor("square", "Blue", "blue");
+      createNewColor("square", "Blue", "blue", "audioassets/Colors/blue.mp3");
     } else if (randomNumber === 3) {
       lastRandomNumber = randomNumber;
-      createNewColor("square", "Green", "green");
+      createNewColor(
+        "square",
+        "Green",
+        "#00ab66",
+        "audioassets/Colors/Green.mp3"
+      );
     } else if (randomNumber === 4) {
       lastRandomNumber = randomNumber;
-      createNewColor("square", "Orange", "#FF7518");
+      createNewColor(
+        "square",
+        "Orange",
+        "#FF7518",
+        "audioassets/Colors/orange.mp3"
+      );
     } else if (randomNumber === 5) {
       lastRandomNumber = randomNumber;
-      createNewColor("square", "Pink", "#FF69B4");
+      createNewColor(
+        "square",
+        "Pink",
+        "#FF69B4",
+        "audioassets/Colors/pink.mp3"
+      );
     } else if (randomNumber === 6) {
       lastRandomNumber = randomNumber;
-      createNewColor("square", "Purple", "purple");
+      createNewColor(
+        "square",
+        "Purple",
+        "purple",
+        "audioassets/Colors/purple.mp3"
+      );
+    } else if (randomNumber === 7) {
+      lastRandomNumber = randomNumber;
+      createNewColor(
+        "square",
+        "Yellow",
+        "#FBEC5D",
+        "audioassets/Colors/yellow.mp3"
+      );
     }
   }
 
@@ -51,19 +81,39 @@
 
     if (randomNumber === 1) {
       lastRandomNumber = randomNumber;
-      createNewShape("triangle", "Triangle", "#FBEC5D");
+      createNewShape(
+        "triangle",
+        "Triangle",
+        "#FBEC5D",
+        "audioassets/Shapes/triangle.mp3"
+      );
     } else if (randomNumber === 2) {
       lastRandomNumber = randomNumber;
-      createNewShape("square", "Square", "#FBEC5D");
+      createNewShape(
+        "square",
+        "Square",
+        "#FBEC5D",
+        "audioassets/Shapes/square.mp3"
+      );
     } else if (randomNumber === 3) {
       lastRandomNumber = randomNumber;
-      createNewShape("rectangle", "Rectangle", "#FBEC5D");
+      createNewShape(
+        "rectangle",
+        "Rectangle",
+        "#FBEC5D",
+        "audioassets/Shapes/rectangle.mp3"
+      );
     } else if (randomNumber === 4) {
       lastRandomNumber = randomNumber;
-      createNewShape("star", "Star", "#FBEC5D");
+      createNewShape("star", "Star", "#FBEC5D", "audioassets/Shapes/star.mp3");
     } else if (randomNumber === 5) {
       lastRandomNumber = randomNumber;
-      createNewShape("circle", "Circle", "#FBEC5D");
+      createNewShape(
+        "circle",
+        "Circle",
+        "#FBEC5D",
+        "audioassets/Shapes/circle.mp3"
+      );
     }
   }
 
@@ -77,64 +127,64 @@
 
     if (randomNumber === 1) {
       lastRandomNumber = randomNumber;
-      createNewNumber("1", "One");
+      createNewNumber("1", "One", "audioassets/Numbers/One.mp3");
     } else if (randomNumber === 2) {
       lastRandomNumber = randomNumber;
-      createNewNumber("2", "Two");
+      createNewNumber("2", "Two", "audioassets/Numbers/two.mp3");
     } else if (randomNumber === 3) {
       lastRandomNumber = randomNumber;
-      createNewNumber("3", "Three");
+      createNewNumber("3", "Three", "audioassets/Numbers/three.mp3");
     } else if (randomNumber === 4) {
       lastRandomNumber = randomNumber;
-      createNewNumber("4", "Four");
+      createNewNumber("4", "Four", "audioassets/Numbers/four.mp3");
     } else if (randomNumber === 5) {
       lastRandomNumber = randomNumber;
-      createNewNumber("5", "Five");
+      createNewNumber("5", "Five", "audioassets/Numbers/five.mp3");
     } else if (randomNumber === 6) {
       lastRandomNumber = randomNumber;
-      createNewNumber("6", "Six");
+      createNewNumber("6", "Six", "audioassets/Numbers/six.mp3");
     } else if (randomNumber === 7) {
       lastRandomNumber = randomNumber;
-      createNewNumber("7", "Seven");
+      createNewNumber("7", "Seven", "audioassets/Numbers/seven.mp3");
     } else if (randomNumber === 8) {
       lastRandomNumber = randomNumber;
-      createNewNumber("8", "Eight");
+      createNewNumber("8", "Eight", "audioassets/Numbers/eight.mp3");
     } else if (randomNumber === 9) {
       lastRandomNumber = randomNumber;
-      createNewNumber("9", "Nine");
+      createNewNumber("9", "Nine", "audioassets/Numbers/nine.mp3");
     } else if (randomNumber === 10) {
       lastRandomNumber = randomNumber;
-      createNewNumber("10", "Ten");
+      createNewNumber("10", "Ten", "audioassets/Numbers/ten.mp3");
     } else if (randomNumber === 11) {
       lastRandomNumber = randomNumber;
-      createNewNumber("11", "Eleven");
+      createNewNumber("11", "Eleven", "audioassets/Numbers/eleven.mp3");
     } else if (randomNumber === 12) {
       lastRandomNumber = randomNumber;
-      createNewNumber("12", "Twelve");
+      createNewNumber("12", "Twelve", "audioassets/Numbers/twelve.mp3");
     } else if (randomNumber === 13) {
       lastRandomNumber = randomNumber;
-      createNewNumber("13", "Thirteen");
+      createNewNumber("13", "Thirteen", "audioassets/Numbers/thirteen.mp3");
     } else if (randomNumber === 14) {
       lastRandomNumber = randomNumber;
-      createNewNumber("14", "Fourteen");
+      createNewNumber("14", "Fourteen", "audioassets/Numbers/fourteen.mp3");
     } else if (randomNumber === 15) {
       lastRandomNumber = randomNumber;
-      createNewNumber("15", "Fifteen");
+      createNewNumber("15", "Fifteen", "audioassets/Numbers/fifteen.mp3");
     } else if (randomNumber === 16) {
       lastRandomNumber = randomNumber;
-      createNewNumber("16", "Sixteen");
+      createNewNumber("16", "Sixteen", "audioassets/Numbers/sixteen.mp3");
     } else if (randomNumber === 17) {
       lastRandomNumber = randomNumber;
-      createNewNumber("17", "Seventeen");
+      createNewNumber("17", "Seventeen", "audioassets/Numbers/seventeen.mp3");
     } else if (randomNumber === 18) {
       lastRandomNumber = randomNumber;
-      createNewNumber("18", "Eighteen");
+      createNewNumber("18", "Eighteen", "audioassets/Numbers/eighteen.mp3");
     } else if (randomNumber === 19) {
       lastRandomNumber = randomNumber;
-      createNewNumber("19", "Nineteen");
+      createNewNumber("19", "Nineteen", "audioassets/Numbers/nineteen.mp3");
     } else if (randomNumber === 20) {
       lastRandomNumber = randomNumber;
-      createNewNumber("20", "Twenty");
+      createNewNumber("20", "Twenty", "audioassets/Numbers/twenty.mp3");
     }
   }
 
@@ -172,9 +222,10 @@
     displayArea.replaceChildren();
   });
 
-  function createNewShape(shape, answer, color) {
+  function createNewShape(shape, answer, color, audioFile) {
     const newDisplay = document.createElement("div");
     const newH1 = document.createElement("h1");
+    const audio = new Audio(audioFile);
     newH1.classList.add("answer");
     newDisplay.classList.add(shape);
     displayArea.append(newDisplay);
@@ -182,11 +233,13 @@
     answerTimer = setTimeout(() => {
       newH1.innerText = answer;
       newH1.style.color = color;
+      audio.play();
     }, 1000);
   }
-  function createNewColor(shape, answer, color) {
+  function createNewColor(shape, answer, color, audioFile) {
     const newDisplay = document.createElement("div");
     const newH1 = document.createElement("h1");
+    const audio = new Audio(audioFile);
     newH1.classList.add("answer");
     newDisplay.classList.add(shape);
     newDisplay.style.backgroundColor = color;
@@ -196,12 +249,14 @@
     answerTimer = setTimeout(() => {
       newH1.innerText = answer;
       newH1.style.color = color;
+      audio.play();
     }, 1000);
   }
 
-  function createNewNumber(number, answer) {
+  function createNewNumber(number, answer, audioFile) {
     const newDisplay = document.createElement("div");
     const newH1 = document.createElement("h1");
+    const audio = new Audio(audioFile);
     newDisplay.classList.add("largeDisplayNumber");
     newH1.classList.add("answer");
     newDisplay.innerText = number;
@@ -210,6 +265,7 @@
     answerTimer = setTimeout(() => {
       newH1.innerText = answer;
       newH1.style.color = "#d3d3d5";
+      audio.play();
     }, 1000);
   }
 })();
