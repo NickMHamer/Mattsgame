@@ -9,6 +9,7 @@
     <title>Kids Learning Game</title>
 </head>
 <body>
+
     
     <div class='contentContainer'>
         <select>
@@ -16,7 +17,10 @@
             <option value='numbers'>Numbers</option>
             <option value='colors'>Colors</option>
         </select>
-        <div class='displayArea'></div>
+        <div class='displayArea'>
+            <div id='gameDisplay' class="defaultDisplay"></div>
+            <h1 id='correctAnswers'></h1>
+        </div>
         <div class='buttonArea'>
             <button id='startButton' class='gameButton' >Start</button>
             <button class='gameButton' id='stopButton'>Stop</button>

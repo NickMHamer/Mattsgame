@@ -5,7 +5,10 @@ body{
 }
 .displayArea{
     height: 500px;
+    flex-direction: column;
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     background-color: blue;
 }
@@ -30,4 +33,53 @@ body{
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+}
+.defaultDisplay{
+    
+    background-color: black;
+    width: 300px;
+    height: 300px;
+}
+#correctAnswers{
+    margin-top: 10px;
+}
+.triangle{
+    width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red;
+
+}
+.square{
+    width: 100px;
+  height: 100px;
+  background: green;
+
+}
+.rectangle{
+    width: 200px;
+  height: 100px;
+  background: purple;
+
+}
+.star{
+    margin: 50px 0;
+      position: relative;
+      display: block;
+      color: orange;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid red;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg);
+
+}
+.circle{
+    width: 100px;
+  height: 100px;
+  background: pink;
+  border-radius: 50%
+
 }
