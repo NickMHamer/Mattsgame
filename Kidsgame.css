@@ -10,6 +10,13 @@ body{
     background-origin: content-box;
 }
 
+select{
+    background-color: #d3d3d5;
+    font-weight: bold;
+}
+option{
+    font-weight: bold;
+}
 .answer{
     height: 30px;
     -webkit-text-stroke: 1px black;
@@ -32,6 +39,7 @@ body{
 }
 
 .gameButton{
+    font-weight: bold;
     width: 50%;  
 }
 #startButton{
