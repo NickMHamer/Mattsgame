@@ -12,7 +12,7 @@
     return Math.floor(Math.random() * max + 1);
   }
 
-  function countingGame() {}
+  //function countingGame() {}
 
   function colorsGame() {
     let randomNumber = getRandomNumber(7);
@@ -198,21 +198,21 @@
       colorsGame();
       refreshIntervalId = setInterval(() => {
         colorsGame();
-      }, 2000);
+      }, 10000);
     } else if (selectorGameType.value === "numbers") {
       backgroundImg.style.backgroundImage =
         "url(assets/kidsbackgroundnumbers.jpg)";
       numbersGame();
       refreshIntervalId = setInterval(() => {
         numbersGame();
-      }, 2000);
+      }, 10000);
     } else if (selectorGameType.value === "shapes") {
       backgroundImg.style.backgroundImage =
         "url(assets/kidsbackgroundshapes.jpg)";
       shapesGame();
       refreshIntervalId = setInterval(() => {
         shapesGame();
-      }, 2000);
+      }, 10000);
     }
   });
 
@@ -234,7 +234,7 @@
       newH1.innerText = answer;
       newH1.style.color = color;
       audio.play();
-    }, 1000);
+    }, 5000);
   }
   function createNewColor(shape, answer, color, audioFile) {
     const newDisplay = document.createElement("div");
@@ -250,7 +250,7 @@
       newH1.innerText = answer;
       newH1.style.color = color;
       audio.play();
-    }, 1000);
+    }, 5000);
   }
 
   function createNewNumber(number, answer, audioFile) {
@@ -266,6 +266,6 @@
       newH1.innerText = answer;
       newH1.style.color = "#d3d3d5";
       audio.play();
-    }, 1000);
+    }, 5000);
   }
 })();
